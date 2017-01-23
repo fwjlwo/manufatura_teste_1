@@ -84,8 +84,8 @@ div.content-wrapper {
 			div.content-wrapper .images img {
 				display: block;
 				position: absolute;
-				/*top: 0;
-				left: 0;*/
+				top: 0;
+				left: 0;
 				width: 100%;
 				height: auto;
 			}
