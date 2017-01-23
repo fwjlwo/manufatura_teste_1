@@ -143,6 +143,6 @@ var newStyleSheet = function(media) {
 $( document ).ready(function () {
 	console.log( 'foi!' );
 
-	mm = new MM();
+	//mm = new MM();
 	
 })
