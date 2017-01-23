@@ -6,6 +6,7 @@ html, body,
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'AkkuratBold', 'Helvetica', sans-serif;
 	font-size: 1.2em;
+	font-weight: bold;
 	color: #FFF;
 }
 
@@ -91,6 +92,8 @@ div.content-wrapper {
 			div.content-wrapper .images img#manufatura_6 {
 				bottom: 0;
 			}
+		section.content-feature object.title {width: 45%;}
+		section.content-feature object.title
 		section.content-feature span.title {
 			display: inline-block;
 			text-align: left;
@@ -154,6 +157,7 @@ div.content-wrapper {
 	section.content-feature span.title {font-size: 2.2em}
 }
 @media screen and (max-width: 46em) {
+	section.content-feature object.title {width: 60%;}
 	section.content-feature span.title {font-size: 1.8em}
 }
 @media screen and (max-width: 40em) {
@@ -163,6 +167,7 @@ div.content-wrapper {
 	}
 }
 @media screen and (max-width: 36em) {
+	section.content-feature object.title {width: 80%;}
 	section.content-feature span.title {font-size: 1.0em}
 	section.info-container {
 		font-size: 0.75em;
