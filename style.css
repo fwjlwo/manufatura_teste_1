@@ -174,3 +174,8 @@ div.content-wrapper {
 	}
 }
 
+.blue-bg {
+	background-color: blue!important;
+	border: 1px solid red!important;
+}
+
