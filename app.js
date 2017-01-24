@@ -163,7 +163,9 @@ $( document ).ready(function () {
 	};
 	imageElement.onload = function (e) { /* Load succeeded. Add the image element to the page. */ };
 	imageElement.onerror = function () { /* Load failed. Show a custom error message. */ };
-	imageElement.onloadend = function () { /* Load either either succeeded or failed. Either way, hide the progress bar. */ };
+	imageElement.onloadend = function () { /* Load either either succeeded or failed. Either way, hide the progress bar. */
+		progressBar.hide();
+	};
 	imageElement.open("GET", "img/manufatura_1.jpg", true);
 	imageElement.send();
 
