@@ -80,6 +80,7 @@ MM = function() {
 				"duration"	: cm.fadeIn,
 				"easing" 	: "easeInSine"
 			});
+			console.log("carregou!");
 		})
 		// carrossel
 		.each( function() {
@@ -142,6 +143,29 @@ var newStyleSheet = function(media) {
 
 $( document ).ready(function () {
 	console.log( 'foi!' );
+
+	//
+	var imageElement = new XMLHttpRequest();
+	var progressBar = $(document.createElement("div"));
+	imageElement.onloadstart = function (e) {
+		/* Show the progress bar. */
+		console.log("oi");
+		progressBar.addClass('progress-bar');
+		$("section.info-container").append(progressBar);
+	};
+	imageElement.onprogress = function (e) {
+		/* Update the progress bar. */
+		if (e.lengthComputable) {
+	        var value = e.loaded / e.total * 100;
+	        console.log(value);
+	        $(progressBar).css("margin-right", (100 - value) + "%");
+		}
+	};
+	imageElement.onload = function (e) { /* Load succeeded. Add the image element to the page. */ };
+	imageElement.onerror = function () { /* Load failed. Show a custom error message. */ };
+	imageElement.onloadend = function () { /* Load either either succeeded or failed. Either way, hide the progress bar. */ };
+	imageElement.open("GET", "img/manufatura_1.jpg", true);
+	imageElement.send();
 
 	mm = new MM();
 	

@@ -18,8 +18,7 @@ div.content-wrapper {
 	left: 0;
 	right: 0;
 	width: 100%;
-	height: 100%;
-	
+	height: 100%;	
 	}
 	section.content-feature {
 		position: fixed;
@@ -177,5 +176,16 @@ div.content-wrapper {
 .blue-bg {
 	background-color: blue!important;
 	border: 1px solid red!important;
+}
+
+.progress-bar {
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 20px;
+	background-color: #000;
+	margin-right: 100%;
 }
 
